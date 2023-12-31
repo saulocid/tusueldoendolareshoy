@@ -1,0 +1,160 @@
+body {
+    background-image: url("/src/dolar02.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    padding: 0;
+}
+
+#titulo {
+    font-size: 40px;
+    background-color: #007BFF;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+}
+
+nav ul {
+    background-color: rgba(95, 158, 160, 0.5);
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+}
+
+nav li {
+    display: inline-block;
+    margin: 8px 0 8px 0;
+    padding: 0 25px 0 5px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    font-size: 25px;
+    color: #007BFF;
+    transition: 300ms;
+}
+
+nav a:not(:hover) {
+    transition: 300ms;
+}
+
+.dolarhoy {
+    width: 80%;
+    max-width: 320px;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    justify-content: center;
+    border: 1px solid #bcbcbc;
+}
+
+footer {
+    background-color: rgba(112, 156, 67, 0.8);
+    font-size: 20px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    margin: 20px
+}
+
+#convertir {
+    background-color: white;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 10px;
+    margin: o;
+    text-align: center;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+}
+
+#formulario label,
+#formulario input,
+#formulario button,
+#resultado label,
+#producto {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+main p {
+    text-align: justify;
+    filter: drop-shadow(0 0 1px rgb(112, 156, 67));
+}
+
+#arriba {
+    padding: 8px 0 8px 0;
+    list-style: none;
+    color: #000000;
+    background-color: rgba(95, 158, 160, 0.5);
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+#arriba:hover{
+    font-size: 25px;
+    transition: 300ms;
+    padding: 10px 0 10px 0;
+    background-color: white;
+    border: grey 1px solid;
+    filter: drop-shadow(0 0 1px #007BFF);
+}
+
+#arriba a:hover{
+    color: rgb(112, 156, 67);
+}
+
+#arriba:not(:hover){
+    transition: 300ms;
+}
+
+#calcular {
+    width: 200px;
+    background-color: rgba(112, 156, 67, 0.8);
+    filter: drop-shadow(2px 2px 2px grey);
+    border-color: grey;
+}
+
+#calcular:hover {
+    border-color: #007BFF;
+    background-color: rgba(82, 136, 27, 0.8);
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgb(30, 0, 255));
+    transition: 300ms;
+    width: 220px;
+}
+
+#calcular:not(:hover) {
+    transition: 300ms;
+}

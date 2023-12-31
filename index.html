@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu sueldo en dolares HOY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">TU SUELDO EN DÓLARES HOY</h1>
+        <nav>
+            <ul class="container-fluid">
+                <li class="col col-5 col-md-2"><a href="https://www.linkedin.com/in/saulociddev/" target="_blank">Mi Linkedin</a></li>
+                <li class="col col-5 col-md-2"><a href="https://wa.me/5492604302926" target="_blank">Whatsapp</a></li>
+                <li class="col col-5 col-md-2"><a href="https://github.com/saulocid" target="_blank">Github</a></li>
+                <li class="col col-5 col-md-2"><a href="#donar">DONAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-fluid col-12 col-md-8">
+        <div class="disclaimer">
+            <h1>Descargo de Responsabilidad</h1>
+            <p>El contenido de este sitio web es puramente informativo y se proporciona tal como está. El uso de la
+                información y los recursos disponibles en este sitio web queda bajo la responsabilidad exclusiva del
+                usuario. El creador de este sitio web no asume ninguna responsabilidad por la exactitud, integridad o
+                idoneidad de la información proporcionada.</p>
+            <p>El contenido de este sitio web no debe considerarse como asesoramiento profesional o legal. Siempre se
+                recomienda consultar con profesionales calificados antes de tomar decisiones basadas en la información
+                encontrada en este sitio.</p>
+            <p>El creador de este sitio web no se hace responsable de ningún daño, pérdida o consecuencia que pueda
+                surgir directa o indirectamente del uso de este sitio web o de la información aquí proporcionada.</p>
+            <p>El usuario asume la responsabilidad total de su uso del contenido y los recursos de este sitio web. Al
+                utilizar este sitio, usted acepta estos términos y condiciones.</p>
+        </div>
+        <div><iframe class="dolarhoy" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe>
+        </div>
+        <h2>Procedimiento</h2>
+        <p>Coloca en la primer casilla tu monto a transformar, luego apreta
+            el boton <strong>CONVERTIR</strong>.</p>
+        <div id="convertir">
+            <form id="formulario">
+                <label for="numero1">Cantidad a convertir $</label>
+                <input type="number" id="numero1" placeholder="Ingrese el monto" required>
+                <br>
+                <div id="tasaDolar">
+                    <label for="numero2">Precio de <strong>VENTA U$S</strong></label>
+                    <input type="number" id="numero2" readonly><br>
+                </div>
+                <button type="button" id="calcular">CONVERTIR</button>
+            </form>
+            <div id="resultado">
+                <label><strong>TOTAL U$S</strong></label>
+                <input type="text" id="producto" readonly>
+            </div>
+        </div>
+        <p>Cabe destacar que, para ser transparente y sincerarte con el precio que el mercado propone debes tomar el
+            valor de venta de las financieras y al precio que hoy es accesible poder comprar, más allá de la cantidad de
+            tipos de cambio que existan el Dolar Blue es el más accesible del mercado.</p>
+    </main>
+
+    <footer>
+        <p id="donar">Ésta es una aplicación web gratuita, si deseas apoyar el contenido dona en los siguientes alias:
+        </p>
+        <p>En Argentina por Mercado Pago a saulo.cid.mp (pesos argentinos)</p>
+        <p>Para el exterior por Paypal a paypal.me/saulocid (dólares estadounidenses)</p>
+        <p>Información de precio de divisa en <a target="_blank" href="https://dolarhoy.com">dolarhoy.com</a> </p>
+        <p>2023 Saulo Cid &copy; Developer</p>
+        <ul>
+            <li id="arriba"><a href="#titulo">ARRIBA</a></li>
+        </ul>
+    </footer>
+
+    <script async src="/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
